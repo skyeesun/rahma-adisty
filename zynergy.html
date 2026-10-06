@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ZYNERGY — Healthcare Backoffice System Testing | Rahma Adisty Muffid Azzahra</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;0,700;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">RA</span>
+      Rahma Adisty M. A.
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="index.html#skills">Skills</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="projects.html">Project</a></li>
+      <li><a href="index.html#certificates">Certificates</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<!-- CASE STUDY HEADER -->
+<section class="page-header">
+  <div class="container">
+    <a href="projects.html" class="breadcrumb">← Back to projects</a>
+    <span class="section-kicker">Academic Project · Software Testing</span>
+    <h1>ZYNERGY</h1>
+    <p class="cs-subtitle">Healthcare Backoffice System Testing</p>
+  </div>
+</section>
+
+<!-- OVERVIEW -->
+<section>
+  <div class="container cs-narrow">
+    <p>ZYNERGY is a healthcare backoffice system developed as part of an academic project. Testing covered nine core features (Login, Create Allergy, Create Menu, and six reminder/content management features) through manual functional testing on the UI and API testing via Postman.</p>
+  </div>
+</section>
+
+<!-- MY ROLE -->
+<section class="section-alt">
+  <div class="container cs-narrow">
+    <div class="section-head">
+      <span class="section-kicker">My Role</span>
+      <h2>Software Testing · Team of 3</h2>
+    </div>
+    <p>Collaborated with two team members throughout the testing process. Testing responsibilities were divided based on system features, while test case preparation, execution, API testing, result analysis, and documentation were carried out collaboratively.</p>
+  </div>
+</section>
+
+<!-- TESTING APPROACH -->
+<section>
+  <div class="container cs-narrow">
+    <div class="section-head">
+      <span class="section-kicker">Methodology</span>
+      <h2>Testing Approach</h2>
+    </div>
+
+    <div class="cs-methods">
+
+      <div class="cs-method">
+        <h3>Manual Functional Testing</h3>
+        <p>Tested system functionality by executing predefined test cases and comparing actual results with expected results.</p>
+        <div class="cs-example">
+          <span class="cs-example-label">Example: ZYNERGY-MENU-01</span>
+          <dl class="cs-case">
+            <div><dt>Scenario</dt><dd>Add a new food menu with a valid name, favorite, and allergy selection, then click Create</dd></div>
+            <div><dt>Expected</dt><dd>Data is saved and shown in the food menu list</dd></div>
+            <div><dt>Result</dt><dd class="cs-pass">PASS</dd></div>
+          </dl>
+        </div>
+      </div>
+
+      <div class="cs-method">
+        <h3>API Testing</h3>
+        <p>Tested API endpoints using Postman to verify request handling and response behavior.</p>
+        <figure class="cs-shot">
+          <img src="images/api testing.png" alt="Postman API request and response for ZYNERGY">
+          <figcaption>API Request &amp; Response — Postman</figcaption>
+        </figure>
+      </div>
+
+      <div class="cs-method">
+        <h3>Black Box Testing</h3>
+        <p>Tested system functionality based on input and expected output without examining the internal implementation of the system. Captured directly in the test case report below.</p>
+        <figure class="cs-shot">
+          <img src="images/login test case report.png" alt="Login feature test case report for ZYNERGY">
+          <figcaption>Test case report — Login feature (ZYNERGY-LOGIN)</figcaption>
+        </figure>
+      </div>
+
+      <div class="cs-method">
+        <h3>Equivalence Class Partitioning (ECP)</h3>
+        <p>Divided input values into valid and invalid equivalence classes to identify potential input validation issues.</p>
+        <div class="cs-example">
+          <span class="cs-example-label">Example: Login feature</span>
+          <table class="cs-table">
+            <thead><tr><th>Input</th><th>Category</th><th>Expected</th></tr></thead>
+            <tbody>
+              <tr><td>Registered email + correct password</td><td>Valid class</td><td>Accepted, redirected to system</td></tr>
+              <tr><td>Unregistered email</td><td>Invalid class</td><td>Rejected, error shown</td></tr>
+              <tr><td>Empty email &amp; password</td><td>Invalid class</td><td>Rejected ("Please fill out this field")</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="cs-method">
+        <h3>Boundary Value Analysis (BVA)</h3>
+        <p>Tested values around defined input boundaries to identify validation issues.</p>
+        <div class="cs-example">
+          <span class="cs-example-label">Example: Meal Reminder, Meal Minute field (TC34)</span>
+          <div class="cs-boundary">
+            <span>Minimum (0)</span>
+            <span class="cs-boundary-arrow">→</span>
+            <span>Boundary (59)</span>
+            <span class="cs-boundary-arrow">→</span>
+            <span>Tested: 60 → Rejected</span>
+          </div>
+          <p class="cs-note">The Meal Minute field only accepts 0–59. Input of 60 correctly triggered a validation error.</p>
+        </div>
+      </div>
+
+      <div class="cs-method">
+        <h3>Decision Table</h3>
+        <p>Tested different combinations of conditions and expected outcomes using a decision table.</p>
+        <figure class="cs-shot">
+          <img src="images/decision table.png" alt="Decision table excerpt for ZYNERGY Login feature">
+          <figcaption>Decision table excerpt — Login feature (5/32 conditions)</figcaption>
+        </figure>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TESTING RESULTS -->
+<section class="section-alt">
+  <div class="container cs-narrow">
+    <div class="section-head">
+      <span class="section-kicker">Results</span>
+      <h2>Testing Results</h2>
+    </div>
+    <div class="cs-stats">
+      <div class="cs-stat"><span class="cs-stat-num">44</span><span class="cs-stat-label">Test Cases</span></div>
+      <div class="cs-stat"><span class="cs-stat-num">35</span><span class="cs-stat-label">Passed</span></div>
+      <div class="cs-stat"><span class="cs-stat-num">9</span><span class="cs-stat-label">Failed</span></div>
+      <div class="cs-stat"><span class="cs-stat-num">100%</span><span class="cs-stat-label">Test Coverage</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- DEFECTS FOUND -->
+<section>
+  <div class="container cs-narrow">
+    <div class="section-head">
+      <span class="section-kicker">Findings</span>
+      <h2>Defects Found</h2>
+    </div>
+    <div class="cs-defects">
+      <div class="cs-defect">
+        <h3>Input Validation Issue</h3>
+        <p>The system accepted special-character input in several text fields (allergy name, menu name, meal name, article title, user name) that should have been rejected. <em>(ZYNERGY-MENU-05)</em></p>
+      </div>
+      <div class="cs-defect">
+        <h3>Duplicate Data</h3>
+        <p>The system allowed a duplicate allergy entry to be submitted even though the same entry already existed in the list. <em>(TC10)</em></p>
+      </div>
+      <div class="cs-defect">
+        <h3>Data Saving Issue</h3>
+        <p>The interface showed a "Created" success pop-up for a new Light Activity Reminder, but the Activity Name field was not actually saved. <em>(TC21)</em></p>
+      </div>
+    </div>
+    <figure class="cs-shot" style="margin-top:28px;">
+      <img src="images/defect.png" alt="Screenshot of a defect found in ZYNERGY">
+      <figcaption>Defect screenshot — special-character input accepted (ZYNERGY-MENU-05)</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- TESTING DOCUMENTATION -->
+<section class="section-alt">
+  <div class="container cs-narrow">
+    <div class="section-head">
+      <span class="section-kicker">Documentation</span>
+      <h2>Testing Documentation</h2>
+    </div>
+    <p>The complete testing process and results are documented in the project's Test Closure Report.</p>
+    <div class="cs-doc-actions">
+      <a href="images/ZYNERGY_TEST CLOSURE.pdf" target="_blank" rel="noopener" class="btn btn-primary">View Test Closure Report <span class="btn-arrow">→</span></a>
+      <a href="https://docs.google.com/spreadsheets/d/1jtQj_ND6poRvM4hM0YlRYoK1xlbIIeT0OsRNh1YuS4I/edit?usp=sharing" target="_blank" rel="noopener" class="btn btn-ghost">View Test Execution Report <span class="btn-arrow">→</span></a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  © 2026 Rahma Adisty Muffid Azzahra. Built with HTML &amp; CSS.
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
