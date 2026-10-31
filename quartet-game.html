@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Kartu Kuartet IPAS — Educational Quartet Card Game | Rahma Adisty Muffid Azzahra</title>
+<meta name="description" content="Kartu Kuartet IPAS: a multiplayer educational quartet card game for elementary school IPAS learning, built with Roblox Studio and Luau as an undergraduate thesis." />
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;0,700;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">RA</span>
+      Rahma Adisty M. A.
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="index.html#skills">Skills</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="projects.html">Project</a></li>
+      <li><a href="index.html#certificates">Certificates</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<!-- 1. PROJECT HERO -->
+<section class="page-header">
+  <div class="container">
+    <a href="projects.html" class="breadcrumb">← Back to projects</a>
+    <span class="section-kicker">Academic Project · Undergraduate Thesis · 2026</span>
+    <h1>Kartu Kuartet IPAS</h1>
+    <p class="cs-subtitle">A Multiplayer Educational Quartet Card Game for Elementary School IPAS</p>
+    <div class="tag-row">
+      <span class="tag">Roblox Studio</span>
+      <span class="tag">Luau</span>
+      <span class="tag">Game UI Design</span>
+    </div>
+    <div class="qg-actions">
+      <a href="https://www.roblox.com/share?code=456d76918d89584db8501e0600bd6ead&type=ExperienceDetails&stamp=1790520058365" target="_blank" rel="noopener" class="btn btn-primary">Play on Roblox <span class="btn-arrow">→</span></a>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="container">
+    <figure class="qg-hero-img">
+      <img src="images/kuartet.png" alt="Kartu Kuartet IPAS main menu running on a phone">
+    </figure>
+  </div>
+</section>
+
+<!-- 2. PROJECT OVERVIEW -->
+<section>
+  <div class="container cs-narrow">
+    <div class="section-head">
+      <span class="section-kicker">Overview</span>
+      <h2>What I built, and why</h2>
+    </div>
+    <p>Kartu Kuartet IPAS is a multiplayer learning game built with Roblox Studio and Luau to support IPAS (science and social studies) learning for elementary school students. It adapts the traditional quartet card game into a digital experience where players collect and group cards based on related concepts.</p>
+    <p>The project was developed as an undergraduate thesis using the ADDIE model, combining game development, educational content design, functional testing, and user evaluation.</p>
+
+    <dl class="qg-facts">
+      <div class="qg-fact"><dt>Target users</dt><dd>Elementary school students (Phase C, Grades 5–6)</dd></div>
+      <div class="qg-fact"><dt>Platform</dt><dd>Roblox</dd></div>
+      <div class="qg-fact"><dt>Game format</dt><dd>2D multiplayer card game</dd></div>
+      <div class="qg-fact"><dt>Players</dt><dd>2–4 per session</dd></div>
+      <div class="qg-fact"><dt>Development model</dt><dd>ADDIE</dd></div>
+    </dl>
+
+    <div class="cs-callout" style="margin-top:28px;">
+      <h3>Problem &amp; goals</h3>
+      <p>IPAS learning is still dominated by conventional methods, which can limit interaction and active participation. This project explores how a digital multiplayer card game can support IPAS learning through visual content, card collection, concept grouping, and interaction between players.</p>
+    </div>
+    <div class="qg-two">
+      <div class="cs-defect">
+        <h3>Learning engagement</h3>
+        <p>Offer a more interactive learning experience through game mechanics.</p>
+      </div>
+      <div class="cs-defect">
+        <h3>Concept understanding</h3>
+        <p>Support recognizing and grouping basic IPAS concepts through quartet cards.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. GAME CONCEPT & KEY FEATURES -->
+<section class="section-alt">
+  <div class="container">
+    <div class="cs-narrow">
+      <div class="section-head">
+        <span class="section-kicker">Game Concept</span>
+        <h2>Key features &amp; gameplay</h2>
+      </div>
+
+      <ol class="qg-steps">
+        <li><strong>Card distribution.</strong> The system shuffles the deck and deals 4 cards to each player.</li>
+        <li><strong>Turn-based play.</strong> Turn order is randomized, and players act one at a time.</li>
+        <li><strong>Requesting cards.</strong> On their turn, a player asks another player for a specific card. A successful request keeps the turn. A failed one means drawing from the deck, and the turn passes.</li>
+        <li><strong>Quartet completion.</strong> The system checks whether a player has gathered the four cards that form one set.</li>
+        <li><strong>Scoring and game end.</strong> Completed sets are scored, the end of the game is detected automatically, and the final ranking is shown.</li>
+      </ol>
+
+      <h3 style="margin-top:40px; font-size:1.1rem;">Educational content</h3>
+      <p>Eight IPAS Phase C categories, each grouped into sets of four related items. The grouping activities follow the unistructural and multistructural levels of the SOLO Taxonomy.</p>
+      <div class="tag-row">
+        <span class="tag">Human Body &amp; Health</span>
+        <span class="tag">Ecosystems</span>
+        <span class="tag">Water Cycle</span>
+        <span class="tag">Energy</span>
+        <span class="tag">Solar System</span>
+        <span class="tag">Indonesian Geography</span>
+        <span class="tag">Sound &amp; Light</span>
+        <span class="tag">History &amp; National Heroes</span>
+      </div>
+    </div>
+
+    <div class="qg-gallery" style="margin-top:44px;">
+      <figure class="cs-shot">
+        <img src="images/roblox_mainmenu.png" alt="Kartu Kuartet IPAS main menu">
+        <figcaption>Main menu</figcaption>
+      </figure>
+      <figure class="cs-shot">
+        <img src="images/roblox_lobby.png" alt="Kartu Kuartet IPAS lobby room">
+        <figcaption>Lobby</figcaption>
+      </figure>
+      <figure class="cs-shot">
+        <img src="images/roblox_main.png" alt="Kartu Kuartet IPAS gameplay with player hand and turn prompt">
+        <figcaption>Gameplay: player hand, opponent cards, turn prompt</figcaption>
+      </figure>
+      <figure class="cs-shot">
+        <img src="images/roblox_score.png" alt="Kartu Kuartet IPAS final scoreboard">
+        <figcaption>Final scoreboard</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- 4. MY ROLE & TECHNICAL IMPLEMENTATION -->
+<section>
+  <div class="container cs-narrow">
+    <div class="section-head">
+      <span class="section-kicker">My Role</span>
+      <h2>Role &amp; technical implementation</h2>
+    </div>
+
+    <ul class="qg-list">
+      <li><strong>Game mechanics</strong> and gameplay flow</li>
+      <li><strong>Luau scripting</strong> and game logic</li>
+      <li><strong>Game UI</strong> design and implementation</li>
+      <li><strong>Functional testing</strong> and evaluation</li>
+    </ul>
+
+    <h3 style="margin-top:40px; font-size:1.1rem;">Technical highlights</h3>
+    <div class="cs-defects">
+      <div class="cs-defect">
+        <h3>Client–server architecture</h3>
+        <p>ServerScripts run the game logic, LocalScripts handle each player's UI, and ModuleScripts hold shared data and functions. RemoteEvents in ReplicatedStorage connect them. Critical logic runs on the server to keep game state consistent across players.</p>
+      </div>
+      <div class="cs-defect">
+        <h3>Room management</h3>
+        <p>A RoomManager module creates 16 rooms: 8 IPAS categories with 2 rooms each, up to 4 players per room. Joining is validated on the server: the room must exist and have space, and the player must not already be in another room.</p>
+      </div>
+      <div class="cs-defect">
+        <h3>Turns &amp; card requests</h3>
+        <p>GameManager randomizes the turn order and owns turn state on the server, broadcasting it with an UpdateTurn event. A card request is accepted only from the active player, then matched against the target player's hand.</p>
+      </div>
+      <div class="cs-defect">
+        <h3>Deck &amp; quartet detection</h3>
+        <p>A nested CardData structure (category, subcategory, item) feeds a DeckManager that shuffles the deck three times and deals 4 cards per player. The server then checks for completed sets and updates scores.</p>
+      </div>
+    </div>
+
+    <!-- <pre class="cs-code" style="margin-top:28px;"><code>JoinRoom.OnServerEvent:Connect(function(player, roomId)
+    local currentRoom = player:GetAttribute("RoomId")
+    if currentRoom then return end
+
+    local room = RoomManager.Rooms[roomId]
+    if not room then return end
+    if #room.Players &gt;= MAX_PLAYERS then return end
+
+    table.insert(room.Players, player)
+    player:SetAttribute("RoomId", roomId)
+
+    local gameRoom = GameManager.Rooms[roomId]
+    if gameRoom then
+        table.insert(gameRoom.Players, player)
+    end
+
+    UpdateRoomUI:FireAllClients(roomId, room.Players)
+
+    if #room.Players &gt;= 2 then
+        RoomManager:StartCountdown(roomId)
+    end
+end)</code></pre>
+    <p class="cs-code-note">Excerpt: server-side join validation. The request is rejected if the player is already in a room, the room does not exist, or it is full. A countdown starts once at least 2 players are in the room.</p>
+  </div>
+</section> -->
+
+<!-- 5. DEVELOPMENT PROCESS -->
+<section class="section-alt">
+  <div class="container cs-narrow">
+    <div class="section-head">
+      <span class="section-kicker">Process</span>
+      <h2>Development process: ADDIE</h2>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-head"><h3>Analysis</h3></div>
+        <p>Identified the learning context, target users, and relevant IPAS learning concepts.</p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-head"><h3>Design</h3></div>
+        <p>Designed the game concept, card mechanics, system flow, and user interface.</p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-head"><h3>Development</h3></div>
+        <p>Implemented the game components and gameplay logic in Roblox Studio using Luau.</p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-head"><h3>Implementation</h3></div>
+        <p>Ran a gameplay trial with 30 sixth-grade elementary school students.</p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-head"><h3>Evaluation</h3></div>
+        <p>Evaluated functionality (black-box testing), user experience (GUESS-18), learning motivation (IMI), and conceptual understanding (pretest–posttest with N-Gain).</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. TESTING & EVALUATION -->
+<section>
+  <div class="container">
+    <div class="cs-narrow">
+      <div class="section-head">
+        <span class="section-kicker">Results</span>
+        <h2>Testing &amp; evaluation</h2>
+        <p>Functional results are reported separately from the evaluation with students, so technical success is not mixed up with learning effectiveness.</p>
+      </div>
+    </div>
+
+    <div class="qg-results-wrap">
+    <div class="qg-results">
+      <div class="qg-result">
+        <span class="qg-result-label">Functional testing</span>
+        <span class="qg-result-num">100%</span>
+        <div class="qg-result-rating">23 of 23 scenarios passed</div>
+        <p>Black-box testing across 7 main function groups. All tested functions worked as designed.</p>
+      </div>
+      <div class="qg-result">
+        <span class="qg-result-label">Game user experience</span>
+        <span class="qg-result-num">4.23<small> / 5</small></span>
+        <div class="qg-result-rating">84.57% · Very Good</div>
+        <p>GUESS-18 average from 30 sixth-grade students. Educational Value scored highest, at 4.57 / 5.</p>
+      </div>
+      <div class="qg-result">
+        <span class="qg-result-label">Learning motivation</span>
+        <span class="qg-result-num">5.99<small> / 7</small></span>
+        <div class="qg-result-rating">85.54% · Very High</div>
+        <p>Intrinsic Motivation Inventory (IMI) average from 30 respondents.</p>
+      </div>
+      <div class="qg-result is-low">
+        <span class="qg-result-label">Concept understanding</span>
+        <span class="qg-result-num">0.19<small> N-Gain</small></span>
+        <div class="qg-result-rating">Low category (Hake)</div>
+        <p>Pretest–posttest average from the 26 of 30 students whose N-Gain could be computed. Limited gain after a single play session.</p>
+      </div>
+    </div>
+    </div>
+
+    <div class="cs-narrow" style="margin-top:40px;">
+      <h3 style="font-size:1.1rem; margin-bottom:14px;">GUESS-18 by dimension</h3>
+      <ul class="qg-bars">
+        <li class="qg-bar"><span class="qg-bar-name">Educational Value</span><span class="qg-bar-track"><span class="qg-bar-fill" style="width:91.33%"></span></span><span class="qg-bar-val">91.33%</span></li>
+        <li class="qg-bar"><span class="qg-bar-name">Social Connectivity</span><span class="qg-bar-track"><span class="qg-bar-fill" style="width:89%"></span></span><span class="qg-bar-val">89.00%</span></li>
+        <li class="qg-bar"><span class="qg-bar-name">Visual Aesthetics</span><span class="qg-bar-track"><span class="qg-bar-fill" style="width:88%"></span></span><span class="qg-bar-val">88.00%</span></li>
+        <li class="qg-bar"><span class="qg-bar-name">Enjoyment</span><span class="qg-bar-track"><span class="qg-bar-fill" style="width:87%"></span></span><span class="qg-bar-val">87.00%</span></li>
+        <li class="qg-bar"><span class="qg-bar-name">Personal Gratification</span><span class="qg-bar-track"><span class="qg-bar-fill" style="width:84%"></span></span><span class="qg-bar-val">84.00%</span></li>
+        <li class="qg-bar is-low"><span class="qg-bar-name">Usability</span><span class="qg-bar-track"><span class="qg-bar-fill" style="width:77.33%"></span></span><span class="qg-bar-val">77.33%</span></li>
+        <li class="qg-bar is-low"><span class="qg-bar-name">Play Engrossment</span><span class="qg-bar-track"><span class="qg-bar-fill" style="width:75.33%"></span></span><span class="qg-bar-val">75.33%</span></li>
+      </ul>
+
+      <div class="cs-callout" style="margin-top:36px;">
+        <h3>Research finding &amp; limitation: conceptual understanding</h3>
+        <p>The average N-Gain was <strong>0.19</strong>, which falls in the low category under Hake's criteria. Four students had a perfect pretest, so their N-Gain could not be computed. Seven students scored lower on the posttest than on the pretest.</p>
+        <p>The thesis links this partly to the game being played in a single session, which gave students no chance to practice repeatedly. The game worked as designed and drew positive motivational responses, but improving conceptual understanding still needs further testing and development.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. FINAL RESULT, REFLECTION & LINKS -->
+<section class="section-alt">
+  <div class="container cs-narrow">
+    <div class="section-head">
+      <span class="section-kicker">Wrap-up</span>
+      <h2>Reflection &amp; next steps</h2>
+    </div>
+
+    <h3 style="font-size:1.1rem;">What I learned</h3>
+    <ul class="qg-list">
+      <li>Keeping critical game logic (validation, scoring, set detection) on the server keeps state consistent for every player in a multiplayer session.</li>
+      <li>A product needs evaluating from several angles: function, user experience, motivation, and understanding. Each result is reported on its own.</li>
+    </ul>
+
+    <h3 style="margin-top:32px; font-size:1.1rem;">Future improvements</h3>
+    <ul class="qg-list">
+      <li>Make the interface more intuitive and add stronger engagement, such as visual effects, more responsive feedback, and varied challenges. Usability and Play Engrossment scored lowest.</li>
+      <li>Test with more than one play session so students can practice repeatedly.</li>
+      <li>Add a concept explanation or feedback screen after each session.</li>
+      <li>Have teachers or curriculum experts validate the card content, and simplify the questionnaire wording for children.</li>
+    </ul>
+
+    <div class="cs-doc-actions" style="margin-top:32px;">
+      <a href="https://www.roblox.com/share?code=456d76918d89584db8501e0600bd6ead&type=ExperienceDetails&stamp=1790520058365" target="_blank" rel="noopener" class="btn btn-primary">Play on Roblox <span class="btn-arrow">→</span></a>
+      <a href="https://repository.upnjatim.ac.id/56066/" target="_blank" rel="noopener" class="btn btn-ghost">Read the full thesis (Indonesian) <span class="btn-arrow">→</span></a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  © 2026 Rahma Adisty Muffid Azzahra. Built with HTML &amp; CSS.
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

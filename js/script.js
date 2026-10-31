@@ -125,7 +125,7 @@ function initFeedCarousels() {
 
 function initLightbox() {
   const ITEM = ".feed-item, .gallery-item, .cs-shot";
-  const GROUP = ".feed-track, .gallery-grid, .cs-methods";
+  const GROUP = ".feed-track, .gallery-grid, .cs-methods, .qg-gallery, .ab-shots";
   const items = document.querySelectorAll(ITEM);
   if (!items.length) return;
 
